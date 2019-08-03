@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weblue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.irriserve.weblue"
+    android:background="@drawable/imagee">
+
+    <Button
+        android:text="Blutooth connectivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:id="@+id/b1"
+        android:background="@android:color/holo_green_dark"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Web view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/b2"
+        android:background="@android:color/holo_green_dark"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/b1"
+        android:layout_alignStart="@+id/b1"
+        android:onClick="hello"/>
+
+    <Button
+        android:text="Make a call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:id="@+id/b3"
+        android:background="@android:color/holo_green_dark"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/b2"
+        android:layout_alignStart="@+id/b2"
+        android:onClick="hello"/>
+</RelativeLayout>

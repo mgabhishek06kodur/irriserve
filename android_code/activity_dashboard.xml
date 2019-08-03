@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.lenovo.irriserve.dashboard">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:background="@drawable/plant"
+                android:text="@string/resource"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:gravity="bottom"
+                android:textColor="#2cfd19"
+                android:textStyle="italic"/>
+
+            <Button
+                android:text="Click here for more info...."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button3"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textStyle="italic"
+                android:onClick="doMore"
+                android:background="@android:color/holo_blue_bright" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_sprout"
+                android:id="@+id/imageView5"
+                android:background="@color/lightgray" />
+
+            <Button
+                android:text="soil moisture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="soil_moisture"
+                android:id="@+id/button"
+                android:background="@color/lightgreen" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_009_drops"
+                android:id="@+id/imageView7"
+                android:background="@color/lightgray" />
+
+            <Button
+                android:text="humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="humidity"
+                android:id="@+id/button2"
+                android:background="@color/lightgreen" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:src="@drawable/ic_049_temperature_1"
+                android:id="@+id/imageView8"
+                android:background="@color/lightgray" />
+
+            <Button
+                android:text="temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="temperature"
+                android:id="@+id/button4"
+                android:background="@color/lightgreen" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
