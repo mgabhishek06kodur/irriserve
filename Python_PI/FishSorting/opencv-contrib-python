@@ -1,0 +1,2293 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en">
+
+    
+
+    <title>opencv-contrib-python · PyPI</title>
+    <meta name="description" content="Wrapper package for OpenCV python bindings.">
+
+    <link rel="stylesheet" href="/static/css/warehouse.6b3cae16.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.91df071f.css">
+    <link rel="stylesheet" href="/static/css/regular.8819f1a9.css">
+    <link rel="stylesheet" href="/static/css/solid.002489ee.css">
+    <link rel="stylesheet" href="/static/css/brands.0c9eb08b.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic|Source+Code+Pro:500">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.69d08c82.css">
+    </noscript>
+
+    
+
+    <link rel="icon" href="/static/images/favicon.6a76275d.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+    
+    <link rel="canonical" href="https://pypi.org/project/opencv-contrib-python/">
+    
+
+    <meta property="og:url" content="https://pypi.org/project/opencv-contrib-python/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.c0030826.jpg">
+    <meta property="og:title" content="opencv-contrib-python">
+    <meta property="og:description" content="Wrapper package for OpenCV python bindings.">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+
+    
+    <script
+      src="https://cdn.ravenjs.com/3.26.2/raven.min.js"
+      integrity="sha384-D6LXy67EIC102DTuqypxwQsTHgiatlbvg7q/1YAWFb6lRyZ1lIZ6bGDsX7jxHNKA"
+      crossorigin="anonymous">
+    </script>
+    
+    <script async
+            data-ga-id="UA-55961911-1"
+            data-sentry-frontend-dsn="https://3a67b35c9dc248a191d761410b095861@sentry.io/1231155"
+            src="/static/js/warehouse.ea40d9aa.js">
+    </script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-1"></script>
+    <script defer src="https://www.fastly-insights.com/insights.js?k=6a52360a-f306-421e-8ed5-7417d0d4a4e9&dnt=true"></script>
+  </head>
+
+  <body data-controller="viewport-toggle">
+    
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button class="button button--primary button--switch-to-mobile hidden" data-target="viewport-toggle.switchToMobile" data-action="viewport-toggle#switchToMobile">
+      Switch to mobile version
+    </button>
+
+    <section id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--danger">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning:</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      
+      <noscript>
+      <div class="notification-bar notification-bar--danger">
+        
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning:</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+    </section>
+
+    <div class="notification-bar">
+      <span class="notification-bar__message">
+        Donate to the Python Software Foundation or Purchase a PyCharm License to Benefit the PSF!
+        <a href="https://www.python.org/psf/donations/2019-q2-drive/" target="_blank" title="Donate to the Python Software Foundation">Donate Now</a>
+      </span>
+    </div>
+
+    
+      <div data-html-include="/_includes/flash-messages/">
+      </div>
+    
+
+    
+
+    
+      <div data-html-include="/_includes/session-notifications/">
+      </div>
+    
+
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="/">
+                <img alt="PyPI" src="/static/images/logo-small.6eef541e.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/">
+              <div role="search">
+                <label for="search" class="sr-only">Search PyPI</label>
+                <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="">
+                
+                <button type="submit" class="search-form__button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <span class="sr-only">Search</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          
+
+          <div data-html-include="/_includes/current-user-indicator/">
+            <nav id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall" aria-label="Main navigation">
+  <a class="horizontal-menu__link horizontal-menu__link--remove-on-mobile" href="/help/">Help</a>
+  <a class="horizontal-menu__link horizontal-menu__link--remove-on-mobile" href="https://donate.pypi.org">Donate</a>
+  <a class="horizontal-menu__link" href="/account/login/">Log in</a>
+  <a class="horizontal-menu__link" href="/account/register/">Register</a>
+</nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <section class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/">
+        <div role="search">
+          <label for="mobile-search" class="sr-only">Search PyPI</label>
+          <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="">
+          
+          <button type="submit" class="search-form__button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span class="sr-only">Search</span>
+          </button>
+          </button>
+        </div>
+      </form>
+    </section>
+    
+
+    <main id="content">
+      
+<section class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        opencv-contrib-python 4.1.0.25
+      </h1>
+
+      
+      <p class="package-header__pip-instructions">
+        <span id="pip-command">pip install opencv-contrib-python</span>
+        <button class="-js-copy-pip-command tooltipped tooltipped-s" data-clipboard-target="#pip-command" aria-label="Copy to clipboard" data-original-label="Copy to clipboard">
+          <i class="fa fa-copy" aria-hidden="true"></i>
+          <span class="sr-only">Copy PIP instructions<span>
+        </button>
+      </p>
+      
+    </div>
+
+    <div class="package-header__right">
+      
+      <a class="status-badge status-badge--good" href="/project/opencv-contrib-python/">Latest version</a>
+      
+      <p class="package-header__date">Last released: <time class="-js-relative-time" datetime="2019-04-11T16:50:53+0000" data-controller="localized-time" data-localized-time-relative="true">
+  Apr 11, 2019
+</time></p>
+    </div>
+  </div>
+</section>
+
+<section class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+    <div class="split-layout split-layout--middle package-description">
+    
+      <p class="package-description__summary">Wrapper package for OpenCV python bindings.</p>
+    
+    <div data-html-include="/_includes/edit-project-button/opencv-contrib-python">
+    </div>
+    </div>
+  </div>
+</section>
+
+<section data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+            <nav role="tablist">
+              <a id="description-tab" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" href="#description" role="tab">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+                Project description
+              </a>
+              <a id="history-tab" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" href="#history" role="tab">
+                <i class="fa fa-history" aria-hidden="true"></i>
+                Release history
+              </a>
+              
+                <a id="files-tab" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" href="#files" role="tab">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download files
+                </a>
+              
+            </nav>
+        </div>
+        
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  
+  
+  <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/skvark/opencv-python" rel="nofollow">
+    
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+  </a>
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <div class="github-repo-info hidden" data-url="https://api.github.com/repos/skvark/opencv-python">
+    GitHub statistics:
+    <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+       data-key="html_url" data-attr="href" data-supplement="/stargazers" rel="noopener"
+       target="_blank">
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <strong>Stars: </strong>
+      <span class="github-repo-info__item" data-key="stargazers_count"></span>
+    </a>
+    <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+       data-key="html_url" data-attr="href" data-supplement="/network" rel="noopener"
+       target="_blank">
+      <i class="fa fa-code-branch" aria-hidden="true"></i>
+      <strong>Forks: </strong>
+      <span class="github-repo-info__item" data-key="forks_count"></span>
+    </a>
+    <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+       data-key="html_url" data-attr="href" data-supplement="/issues" rel="noopener"
+       target="_blank">
+      <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      <strong>Open issues/PRs: </strong>
+      <span class="github-repo-info__item" data-key="open_issues_count"></span>
+    </a>
+  </div>
+  
+  <p>View statistics for this project via <a
+          href="https://libraries.io/pypi/opencv-contrib-python">Libraries.io</a>, or by using
+    <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/">Google
+      BigQuery</a></p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> MIT License (MIT)</p>
+  
+  
+  
+    <p><strong>Maintainer:</strong> Olli-Pekka Heinisuo</p>
+  
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/skvark/" aria-label="skvark" class="sidebar-section__user-gravatar">
+        <img src="https://warehouse-camo.cmh1.psfhosted.org/6e53d05b4ed559dba62a1959a2f6747c8deec078/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f31306164313130333137326337373832623136326135333632303034333861303f73697a653d3530" height="50" width="50" alt="Avatar for skvark from gravatar.com" title="Avatar for skvark from gravatar.com">
+      </a>
+      <a href="/user/skvark/" class="sidebar-section__user-gravatar-text">
+        skvark
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section classifiers">
+  <h3>Classifiers</h3>
+  <dl>
+    
+    <dt>Development Status</dt>
+    
+    <dd>
+    <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+      5 - Production/Stable
+    </a>
+    </dd>
+    
+    
+    <dt>Environment</dt>
+    
+    <dd>
+    <a href="/search/?c=Environment+%3A%3A+Console">
+      Console
+    </a>
+    </dd>
+    
+    
+    <dt>Intended Audience</dt>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+      Developers
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Education">
+      Education
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Information+Technology">
+      Information Technology
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Science%2FResearch">
+      Science/Research
+    </a>
+    </dd>
+    
+    
+    <dt>License</dt>
+    
+    <dd>
+    <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+      OSI Approved :: MIT License
+    </a>
+    </dd>
+    
+    
+    <dt>Operating System</dt>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+MacOS">
+      MacOS
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+      Microsoft :: Windows
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX">
+      POSIX
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+Unix">
+      Unix
+    </a>
+    </dd>
+    
+    
+    <dt>Programming Language</dt>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+C%2B%2B">
+      C++
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python">
+      Python
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2">
+      Python :: 2
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2.7">
+      Python :: 2.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+      Python :: 3
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.4">
+      Python :: 3.4
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.5">
+      Python :: 3.5
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.6">
+      Python :: 3.6
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.7">
+      Python :: 3.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+CPython">
+      Python :: Implementation :: CPython
+    </a>
+    </dd>
+    
+    
+    <dt>Topic</dt>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Scientific%2FEngineering">
+      Scientific/Engineering
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Scientific%2FEngineering+%3A%3A+Image+Recognition">
+      Scientific/Engineering :: Image Recognition
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Software+Development">
+      Software Development
+    </a>
+    </dd>
+    
+    
+  </dl>
+</div>
+
+
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav>
+          <a id="mobile-description-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" href="#description">
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+            Project description
+          </a>
+          <a id="mobile-data-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" href="#data">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            Project details
+          </a>
+          <a id="mobile-history-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" href="#history">
+            <i class="fa fa-history" aria-hidden="true"></i>
+            Release history
+          </a>
+          
+          <a id="mobile-files-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" href="#files">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            Download files
+          </a>
+          
+        </nav>
+
+        
+        <div id="description" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab">
+          <h2 class="page-title">Project description</h2>
+          
+          <div class="project-description">
+            <p><a href="http://pepy.tech/project/opencv-python" rel=nofollow><img alt=Downloads src="https://warehouse-camo.cmh1.psfhosted.org/2e4c5485ad315b07d01fffc9c602902c701079bc/687474703a2f2f706570792e746563682f62616467652f6f70656e63762d707974686f6e"></a></p>
+<h2>OpenCV on Wheels</h2>
+<p><strong>Unofficial</strong> pre-built OpenCV packages for Python.</p>
+<h3>Installation and Usage</h3>
+<ol>
+<li>
+<p>If you have previous/other manually installed (= not installed via <code>pip</code>) version of OpenCV installed (e.g. cv2 module in the root of Python's site-packages), remove it before installation to avoid conflicts.</p>
+</li>
+<li>
+<p>Select the correct package for your environment:</p>
+<p>There are four different packages and you should <strong>select only one of them</strong>. Do not install multiple different packages in the same environment. There is no plugin architecture: all the packages use the same namespace (<code>cv2</code>). If you installed multiple different packages in the same environment, uninstall them all with <code>pip uninstall</code> and reinstall only one package.</p>
+<p><strong>a.</strong> Packages for standard desktop environments (Windows, macOS, almost any GNU/Linux distribution)</p>
+<ul>
+<li>run <code>pip install opencv-python</code> if you need only main modules</li>
+<li>run <code>pip install opencv-contrib-python</code> if you need both main and contrib modules (check extra modules listing from <a href="https://docs.opencv.org/master/" rel=nofollow>OpenCV documentation</a>)</li>
+</ul>
+<p><strong>b.</strong> Packages for server (headless) environments</p>
+<p>These packages do not contain any GUI functionality. They are smaller and suitable for more restricted environments.</p>
+<ul>
+<li>run <code>pip install opencv-python-headless</code> if you need only main modules</li>
+<li>run <code>pip install opencv-contrib-python-headless</code> if you need both main and contrib modules (check extra modules listing from <a href="https://docs.opencv.org/master/" rel=nofollow>OpenCV documentation</a>)</li>
+</ul>
+</li>
+<li>
+<p>Import the package:</p>
+<p><code>import cv2</code></p>
+<p>All packages contain haarcascade files. <code>cv2.data.haarcascades</code> can be used as a shortcut to the data folder. For example:</p>
+<p><code>cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")</code></p>
+</li>
+<li>
+<p>Read <a href="https://docs.opencv.org/master/" rel=nofollow>OpenCV documentation</a></p>
+</li>
+<li>
+<p>Before opening a new issue, read the FAQ below and have a look at the other issues which are already open.</p>
+</li>
+</ol>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Q: Do I need to install also OpenCV separately?</strong></p>
+<p>A: No, the packages are special wheel binary packages and they already contain statically built OpenCV binaries.</p>
+<p><strong>Q: Pip fails with <code>Could not find a version that satisfies the requirement ...</code>?</strong></p>
+<p>A: Most likely the issue is related to too old pip and can be fixed by running <code>pip install --upgrade pip</code>. Note that the wheel (especially manylinux) format does not currently support properly ARM architecture so there are no packages for ARM based platforms in PyPI. However, <code>opencv-python</code> packages for Raspberry Pi can be found from <a href="https://www.piwheels.org/" rel=nofollow>https://www.piwheels.org/</a>.</p>
+<p><strong>Q: Import fails on Windows: <code>ImportError: DLL load failed: The specified module could not be found.</code>?</strong></p>
+<p>A: If the import fails on Windows, make sure you have <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" rel=nofollow>Visual C++ redistributable 2015</a> installed. If you are using older Windows version than Windows 10 and latest system updates are not installed, <a href="https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows" rel=nofollow>Universal C Runtime</a> might be also required.</p>
+<p>Windows N and KN editions do not include Media Feature Pack which is required by OpenCV. If you are using Windows N or KN edition, please install also <a href="https://support.microsoft.com/en-us/help/3145500/media-feature-pack-list-for-windows-n-editions" rel=nofollow>Windows Media Feature Pack</a>.</p>
+<p>If the above does not help, check if you are using Anaconda. Old Anaconda versions have a bug which causes the error, see <a href="https://github.com/skvark/opencv-python/issues/36" rel=nofollow>this issue</a> for a manual fix.</p>
+<p>If you still encounter the error after you have checked all the previous solutions, download <a href="https://github.com/lucasg/Dependencies" rel=nofollow>Dependencies</a> and open the <code>cv2.pyd</code> (located usually at <code>C:\Users\username\AppData\Local\Programs\Python\PythonXX\Lib\site-packages\cv2</code>) file with it to debug missing DLL issues.</p>
+<p><strong>Q: I have some other import errors?</strong></p>
+<p>A: Make sure you have removed old manual installations of OpenCV Python bindings (cv2.so or cv2.pyd in site-packages).</p>
+<p><strong>Q: Why the packages do not include non-free algorithms?</strong></p>
+<p>A: Non-free algorithms such as SIFT and SURF are not included in these packages because they are patented and therefore cannot be distributed as built binaries. See this issue for more info: <a href="https://github.com/skvark/opencv-python/issues/126" rel=nofollow>https://github.com/skvark/opencv-python/issues/126</a></p>
+<p><strong>Q: Why the package and import are different (opencv-python vs. cv2)?</strong></p>
+<p>A: It's easier for users to understand <code>opencv-python</code> than <code>cv2</code> and it makes it easier to find the package with search engines. <code>cv2</code> (old interface in old OpenCV versions was named as <code>cv</code>) is the name that OpenCV developers chose when they created the binding generators. This is kept as the import name to be consistent with different kind of tutorials around the internet. Changing the import name or behaviour would be also confusing to experienced users who are accustomed to the <code>import cv2</code>.</p>
+<h2>Documentation for opencv-python</h2>
+<p><a href="https://ci.appveyor.com/project/skvark/opencv-python" rel=nofollow><img alt="AppVeyor CI test status (Windows)" src="https://warehouse-camo.cmh1.psfhosted.org/169f638b7fdff99ff144fe34d11b931cb67beea3/68747470733a2f2f696d672e736869656c64732e696f2f6170707665796f722f63692f736b7661726b2f6f70656e63762d707974686f6e2e7376673f6d61784167653d33363030266c6162656c3d57696e646f7773"></a>
+<a href="https://travis-ci.org/skvark/opencv-python" rel=nofollow><img alt="Travis CI test status (Linux and OS X)" src="https://warehouse-camo.cmh1.psfhosted.org/cd69bca3a56d170f584d90bfe956c302d25b3002/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f736b7661726b2f6f70656e63762d707974686f6e2e7376673f6d61784167653d33363030266c6162656c3d4c696e75782b6d61634f53"></a></p>
+<p>The aim of this repository is to provide means to package each new <a href="https://github.com/opencv/opencv/releases" rel=nofollow>OpenCV release</a> for the most used Python versions and platforms.</p>
+<h3>Build process</h3>
+<p>The project is structured like a normal Python package with a standard <code>setup.py</code> file. The build process for a single entry in the build matrices is as follows (see for example <code>appveyor.yml</code> file):</p>
+<ol>
+<li>
+<p>Checkout repository and submodules</p>
+<ul>
+<li>OpenCV is included as submodule and the version is updated
+manually by maintainers when a new OpenCV release has been made</li>
+<li>Contrib modules are also included as a submodule</li>
+</ul>
+</li>
+<li>
+<p>Find OpenCV version from the sources</p>
+</li>
+<li>
+<p>Install dependencies (numpy)</p>
+</li>
+<li>
+<p>Build OpenCV</p>
+<ul>
+<li>tests are disabled, otherwise build time increases too much</li>
+<li>there are 4 build matrix entries for each build combination: with and without contrib modules, with and without GUI (headless)</li>
+<li>Linux builds run in manylinux Docker containers (CentOS 5)</li>
+</ul>
+</li>
+<li>
+<p>Copy each <code>.pyd/.so</code> file to cv2 folder of this project and
+generate wheel</p>
+<ul>
+<li>Linux and macOS wheels are checked with auditwheel and delocate</li>
+</ul>
+</li>
+<li>
+<p>Install the generated wheel</p>
+</li>
+<li>
+<p>Test that Python can import the library and run some sanity checks</p>
+</li>
+<li>
+<p>Use twine to upload the generated wheel to PyPI (only in release builds)</p>
+</li>
+</ol>
+<p>The <code>cv2.pyd/.so</code> file is normally copied to site-packages. To avoid polluting the root folder this package wraps the statically built binary into cv2 package and <code>__init__.py</code> file in the package handles the import logic correctly.</p>
+<p>Since all packages use the same <code>cv2</code> namespace explained above, uninstall the other package before switching for example from <code>opencv-python</code> to <code>opencv-contrib-python</code>.</p>
+<h3>Licensing</h3>
+<p>Opencv-python package (scripts in this repository) is available under MIT license.</p>
+<p>OpenCV itself is available under <a href="https://github.com/opencv/opencv/blob/master/LICENSE" rel=nofollow>3-clause BSD License</a>.</p>
+<p>Third party package licenses are at <a href="https://github.com/skvark/opencv-python/blob/master/LICENSE-3RD-PARTY.txt" rel=nofollow>LICENSE-3RD-PARTY.txt</a>.</p>
+<p>All wheels ship with <a href="http://ffmpeg.org" rel=nofollow>FFmpeg</a> licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html" rel=nofollow>LGPLv2.1</a>.</p>
+<p>Linux and MacOS wheels ship with <a href="http://doc.qt.io/qt-4.8/lgpl.html" rel=nofollow>Qt 4.8.7</a> licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html" rel=nofollow>LGPLv2.1</a>.</p>
+<h3>Versioning</h3>
+<p><code>find_version.py</code> script searches for the version information from OpenCV sources and appends also a revision number specific to this repository to the version string.</p>
+<h3>Releases</h3>
+<p>A release is made and uploaded to PyPI when a new tag is pushed to master branch. These tags differentiate packages (this repo might have modifications but OpenCV version stays same) and should be incremented sequentially. In practice, release version numbers look like this:</p>
+<p><code>cv_major.cv_minor.cv_revision.package_revision</code> e.g. <code>3.1.0.0</code></p>
+<h3>Development builds</h3>
+<p>Every commit to the master branch of this repo will be built. Possible build artifacts use local version identifiers:</p>
+<p><code>cv_major.cv_minor.cv_revision+git_hash_of_this_repo</code> e.g. <code>3.1.0+14a8d39</code></p>
+<p>These artifacts can't be and will not be uploaded to PyPI.</p>
+<h3>Manylinux wheels</h3>
+<p>Linux wheels are built using <a href="https://github.com/pypa/python-manylinux-demo" rel=nofollow>manylinux</a>. These wheels should work out of the box for most of the distros (which use GNU C standard library) out there since they are built against an old version of glibc.</p>
+<p>The default <code>manylinux</code> images have been extended with some OpenCV dependencies. See <a href="https://github.com/skvark/opencv-python/tree/master/docker" rel=nofollow>Docker folder</a> for more info.</p>
+<h3>Supported Python versions</h3>
+<p>Python 2.7 is the only supported version in 2.x series. Python 2.7 support will be dropped in the end of 2019.</p>
+<p>Python 3.x releases follow Numpy releases. For example Python 3.3 is no longer supported by Numpy so support for it has been dropped in <code>opencv-python</code>, too.</p>
+<p>Currently, builds for following Python versions are provided:</p>
+<ul>
+<li>2.7</li>
+<li>3.4</li>
+<li>3.5</li>
+<li>3.6</li>
+<li>3.7</li>
+</ul>
+
+          </div>
+          
+        </div>
+
+        
+        <div id="data" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab">
+          <h2 class="page-title">Project details</h2>
+          
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  
+  
+  <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/skvark/opencv-python" rel="nofollow">
+    
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+  </a>
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <div class="github-repo-info hidden" data-url="https://api.github.com/repos/skvark/opencv-python">
+    GitHub statistics:
+    <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+       data-key="html_url" data-attr="href" data-supplement="/stargazers" rel="noopener"
+       target="_blank">
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <strong>Stars: </strong>
+      <span class="github-repo-info__item" data-key="stargazers_count"></span>
+    </a>
+    <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+       data-key="html_url" data-attr="href" data-supplement="/network" rel="noopener"
+       target="_blank">
+      <i class="fa fa-code-branch" aria-hidden="true"></i>
+      <strong>Forks: </strong>
+      <span class="github-repo-info__item" data-key="forks_count"></span>
+    </a>
+    <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+       data-key="html_url" data-attr="href" data-supplement="/issues" rel="noopener"
+       target="_blank">
+      <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      <strong>Open issues/PRs: </strong>
+      <span class="github-repo-info__item" data-key="open_issues_count"></span>
+    </a>
+  </div>
+  
+  <p>View statistics for this project via <a
+          href="https://libraries.io/pypi/opencv-contrib-python">Libraries.io</a>, or by using
+    <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/">Google
+      BigQuery</a></p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> MIT License (MIT)</p>
+  
+  
+  
+    <p><strong>Maintainer:</strong> Olli-Pekka Heinisuo</p>
+  
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/skvark/" aria-label="skvark" class="sidebar-section__user-gravatar">
+        <img src="https://warehouse-camo.cmh1.psfhosted.org/6e53d05b4ed559dba62a1959a2f6747c8deec078/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f31306164313130333137326337373832623136326135333632303034333861303f73697a653d3530" height="50" width="50" alt="Avatar for skvark from gravatar.com" title="Avatar for skvark from gravatar.com">
+      </a>
+      <a href="/user/skvark/" class="sidebar-section__user-gravatar-text">
+        skvark
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section classifiers">
+  <h3>Classifiers</h3>
+  <dl>
+    
+    <dt>Development Status</dt>
+    
+    <dd>
+    <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+      5 - Production/Stable
+    </a>
+    </dd>
+    
+    
+    <dt>Environment</dt>
+    
+    <dd>
+    <a href="/search/?c=Environment+%3A%3A+Console">
+      Console
+    </a>
+    </dd>
+    
+    
+    <dt>Intended Audience</dt>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+      Developers
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Education">
+      Education
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Information+Technology">
+      Information Technology
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Science%2FResearch">
+      Science/Research
+    </a>
+    </dd>
+    
+    
+    <dt>License</dt>
+    
+    <dd>
+    <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+      OSI Approved :: MIT License
+    </a>
+    </dd>
+    
+    
+    <dt>Operating System</dt>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+MacOS">
+      MacOS
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+      Microsoft :: Windows
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX">
+      POSIX
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+Unix">
+      Unix
+    </a>
+    </dd>
+    
+    
+    <dt>Programming Language</dt>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+C%2B%2B">
+      C++
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python">
+      Python
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2">
+      Python :: 2
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2.7">
+      Python :: 2.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+      Python :: 3
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.4">
+      Python :: 3.4
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.5">
+      Python :: 3.5
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.6">
+      Python :: 3.6
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.7">
+      Python :: 3.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+CPython">
+      Python :: Implementation :: CPython
+    </a>
+    </dd>
+    
+    
+    <dt>Topic</dt>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Scientific%2FEngineering">
+      Scientific/Engineering
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Scientific%2FEngineering+%3A%3A+Image+Recognition">
+      Scientific/Engineering :: Image Recognition
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Software+Development">
+      Software Development
+    </a>
+    </dd>
+    
+    
+  </dl>
+</div>
+
+          <br>
+        </div>
+
+        
+        <div id="history" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <a class="reset-text margin-top" href="/help/#project-release-notifications">Release notifications</a>
+          </h2>
+
+          <section class="release-timeline">
+            
+            
+            
+            
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                
+                <span class="badge">This version</span>
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/blue-cube.e6165d35.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/4.1.0.25/">
+                <p class="release__version">
+                  4.1.0.25 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T16:50:53+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/4.0.1.24/">
+                <p class="release__version">
+                  4.0.1.24 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-09T16:46:14+0000" data-controller="localized-time">
+  Apr 9, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/4.0.1.23/">
+                <p class="release__version">
+                  4.0.1.23 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-08T17:32:31+0000" data-controller="localized-time">
+  Apr 8, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/4.0.0.21/">
+                <p class="release__version">
+                  4.0.0.21 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-01-09T16:25:08+0000" data-controller="localized-time">
+  Jan 9, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.5.20/">
+                <p class="release__version">
+                  3.4.5.20 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-12-28T10:32:24+0000" data-controller="localized-time">
+  Dec 28, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.4.19/">
+                <p class="release__version">
+                  3.4.4.19 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-11-27T15:50:15+0000" data-controller="localized-time">
+  Nov 27, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.3.18/">
+                <p class="release__version">
+                  3.4.3.18 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-09-09T11:05:45+0000" data-controller="localized-time">
+  Sep 9, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.2.17/">
+                <p class="release__version">
+                  3.4.2.17 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-07-23T16:13:56+0000" data-controller="localized-time">
+  Jul 23, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.2.16/">
+                <p class="release__version">
+                  3.4.2.16 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-07-21T16:56:57+0000" data-controller="localized-time">
+  Jul 21, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.1.15/">
+                <p class="release__version">
+                  3.4.1.15 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-05-19T15:35:58+0000" data-controller="localized-time">
+  May 19, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.0.14/">
+                <p class="release__version">
+                  3.4.0.14 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-05-15T18:43:32+0000" data-controller="localized-time">
+  May 15, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.4.0.12/">
+                <p class="release__version">
+                  3.4.0.12 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-12-28T20:51:45+0000" data-controller="localized-time">
+  Dec 28, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.3.1.11/">
+                <p class="release__version">
+                  3.3.1.11 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-12-23T13:13:51+0000" data-controller="localized-time">
+  Dec 23, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.3.0.10/">
+                <p class="release__version">
+                  3.3.0.10 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-09-03T09:31:57+0000" data-controller="localized-time">
+  Sep 3, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.3.0.9/">
+                <p class="release__version">
+                  3.3.0.9 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-08-12T17:23:19+0000" data-controller="localized-time">
+  Aug 12, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.2.0.8/">
+                <p class="release__version">
+                  3.2.0.8 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-07-22T16:37:08+0000" data-controller="localized-time">
+  Jul 22, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.2.0.7/">
+                <p class="release__version">
+                  3.2.0.7 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-04-08T14:44:54+0000" data-controller="localized-time">
+  Apr 8, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release release--oldest">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/opencv-contrib-python/3.1.0.0/">
+                <p class="release__version">
+                  3.1.0.0 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-04-08T12:35:56+0000" data-controller="localized-time">
+  Apr 8, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+          </section>
+        </div>
+
+        
+          
+          <div id="files" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/installing/">installing packages</a>.</p>
+
+            <table class="table table--downloads">
+              <thead>
+                <tr>
+                  <th class="table__filename">
+                    Filename, size &amp; hash
+                    <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" class="tooltipped tooltipped-n" aria-label="what's this?" data-original-label="what's this?">
+                      <i class="fa fa-question-circle" aria-hidden="true"></i>
+                      <span class="sr-only">SHA256 hash help</span>
+                    </a>
+                  </th>
+                  <th class="table__type">File type</th>
+                  <th class="table__version">Python version</th>
+                  <th class="table__upload-date">Upload date</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/da/83/930364e5c3c06f628a82dba4b16c97024fe9599f2119c65ae05f9ac4a175/opencv_contrib_python-4.1.0.25-cp27-cp27m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+                    </a>
+                     (62.0 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="36c65d9d6b1b54d111e8c1886fdb37d03e8aec5abd3e1e3d19a43749a11cd71d">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T22:54:14+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/60/d8/6724a5f0d389174e14ee99d58ddc7c5d98330d8c48bb85b7fba4c31af975/opencv_contrib_python-4.1.0.25-cp27-cp27m-manylinux1_i686.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27m-manylinux1_i686.whl
+                    </a>
+                     (33.2 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="5af918643c5b229ddefc1efbd2cc5c476ac3fd1c7e7435d5e27a1228aee62a03">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T16:57:59+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/ef/40/5bdcb1f9d95cd63cdb62d932a536e554e9f3dade8167f50cd76c2b9bf653/opencv_contrib_python-4.1.0.25-cp27-cp27m-manylinux1_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27m-manylinux1_x86_64.whl
+                    </a>
+                     (32.6 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="4e55f625a3246767e7bcb10f8d0197834d6e47c938e02285abfac31df8ff7855">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T16:51:32+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/2c/40/0897f729e1f1cb50443938fde08a85fdcff1d534e3429b1766f6c52bfed3/opencv_contrib_python-4.1.0.25-cp27-cp27mu-manylinux1_i686.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27mu-manylinux1_i686.whl
+                    </a>
+                     (33.2 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="18ca5c322992c07a8d71f1907286bf89cd776fe3ec91b94ffd7e27b91c899ce7">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T16:55:45+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/b6/ed/534f97af6a8940da5f4076b530f07d1d660ba1aeb25dade588f96b065af5/opencv_contrib_python-4.1.0.25-cp27-cp27mu-manylinux1_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27mu-manylinux1_x86_64.whl
+                    </a>
+                     (32.6 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="e7e6d423846e4e7710d31864c010c32dfc331729e7d1a87d3a2c88788e5f5ebb">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T16:50:53+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/b1/4b/8a93a4fbe0d06c3ee3626affb487c587aef32f68379f26a3a0bb1b0b7def/opencv_contrib_python-4.1.0.25-cp27-cp27m-win32.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27m-win32.whl
+                    </a>
+                     (30.9 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="0475049095da1693ce2bfade4d26482b51f23c822facfe8718cd5490d56a6094">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T19:29:48+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/a1/b1/d8b67e6e0a002c00999d5497c9372f699bffbd4f4a7b2dd4e22f858d5583/opencv_contrib_python-4.1.0.25-cp27-cp27m-win_amd64.whl">
+                      opencv_contrib_python-4.1.0.25-cp27-cp27m-win_amd64.whl
+                    </a>
+                     (43.7 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="36b06bd9329d4fdc0d7bbb22f5ffa7d02e57137ecd5b0922ad1a5085390a392f">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp27
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T20:00:23+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/61/23/bf84fc02f01bfa14d660d556b73ba71100617135ae1d6afc712aa13e97a4/opencv_contrib_python-4.1.0.25-cp34-cp34m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp34-cp34m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+                    </a>
+                     (62.0 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="df8391c4efe0b7efcfc874196317ad9ab127923be1efc0f5b447e95b90435f30">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp34
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T22:56:46+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/d1/4d/0e3fb576a596c8ac2aef180ec2d48895708fe95a288506ae3265089d570d/opencv_contrib_python-4.1.0.25-cp34-cp34m-manylinux1_i686.whl">
+                      opencv_contrib_python-4.1.0.25-cp34-cp34m-manylinux1_i686.whl
+                    </a>
+                     (33.2 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="57331a3ba5d4e1f4c2d2648e34fb37d6db1ff40b18b2334c652f55d5aa47b147">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp34
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:03:18+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/e5/31/f39a254cced798ed5fbb66f2aa05552a687406c1043c1b75b9e5cfda2292/opencv_contrib_python-4.1.0.25-cp34-cp34m-manylinux1_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp34-cp34m-manylinux1_x86_64.whl
+                    </a>
+                     (32.6 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="a89c6b6e90abb4158baf1a61afd83a205b4a7dabbac1b40149812eb4899fff06">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp34
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T16:58:44+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/15/eb/f2ed4c89cf9a6d14e3cce834857e5477be02b3d94a393f2f20f112f048de/opencv_contrib_python-4.1.0.25-cp34-cp34m-win32.whl">
+                      opencv_contrib_python-4.1.0.25-cp34-cp34m-win32.whl
+                    </a>
+                     (30.9 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="1c7baaa7c22550111773f1c31761913d3f08b80bdea7c2022ae52d4de35ea193">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp34
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T20:26:24+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/1a/58/a35cef6d7f7e603c293d3edcb44736282215340b98fd19e538920aa490d6/opencv_contrib_python-4.1.0.25-cp34-cp34m-win_amd64.whl">
+                      opencv_contrib_python-4.1.0.25-cp34-cp34m-win_amd64.whl
+                    </a>
+                     (43.7 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="5b5aa92d0d91c61901efbd4e630685be25fe2792cfff725a9f752fd4a16ad1b2">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp34
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T20:55:06+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/55/40/77ae255bf62198abe945ac48705913b91d5cdd7417111371d189c0071160/opencv_contrib_python-4.1.0.25-cp35-cp35m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp35-cp35m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+                    </a>
+                     (62.0 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="1bdf4feac3bbffd528fea514a2a26885381d7eee5974d45845cb7ea6e9cc31fa">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp35
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T23:05:25+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/1a/5d/ca5309884b95d5b20218f0ba90cfb64b41eefa74e2e8f2ef0315d134e411/opencv_contrib_python-4.1.0.25-cp35-cp35m-manylinux1_i686.whl">
+                      opencv_contrib_python-4.1.0.25-cp35-cp35m-manylinux1_i686.whl
+                    </a>
+                     (33.2 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="566148d217c9c5b117e190d818510cd54398a7e47c87b16ce46dcf966b785cda">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp35
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:06:03+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/56/df/bb1d998d1dc7e507507257abbdc941e02e91d7c01fcee5c778208588f8ae/opencv_contrib_python-4.1.0.25-cp35-cp35m-manylinux1_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp35-cp35m-manylinux1_x86_64.whl
+                    </a>
+                     (32.6 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="5d73321808b7d5df5ac336f8593359f3a9cf7c804db7a503801374975d1c4d3e">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp35
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:05:19+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/37/72/6561c425ef8bb23689853b169e59b6ea19fbda90a2fcf3d82cc9ecddd543/opencv_contrib_python-4.1.0.25-cp35-cp35m-win32.whl">
+                      opencv_contrib_python-4.1.0.25-cp35-cp35m-win32.whl
+                    </a>
+                     (30.9 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="84a5289277ca4234b7cf2da95ba48f73fe090e4929faf5c96de55e51f0968bf1">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp35
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T21:22:35+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/17/72/46d0ec2a0fcc552d8dbae82ca01a1db3260ef5e2c3bde245d140c19481a4/opencv_contrib_python-4.1.0.25-cp35-cp35m-win_amd64.whl">
+                      opencv_contrib_python-4.1.0.25-cp35-cp35m-win_amd64.whl
+                    </a>
+                     (43.7 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="2930518f5a397ef24d07d0d02a131e66e8d1d7cc81ff840c09c466d7410f4cb0">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp35
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T21:52:02+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/6b/2c/56a6bc256066b282a117233406685841e4cb68b4c67c9085233b1e2b1e69/opencv_contrib_python-4.1.0.25-cp36-cp36m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp36-cp36m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+                    </a>
+                     (62.0 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="f5bec4ab094958488d25d7ebbb805b8ee49cd58a6ed0983d13fffa0dcb5276f6">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp36
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T23:10:17+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/5e/b4/98c553a565ac393d9fb0b373ada808dca9d6cf6622e92c5463e033a2ef7b/opencv_contrib_python-4.1.0.25-cp36-cp36m-manylinux1_i686.whl">
+                      opencv_contrib_python-4.1.0.25-cp36-cp36m-manylinux1_i686.whl
+                    </a>
+                     (33.2 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="ec44976a2fb344d4c803fcc0d9873f39525269ecac3253b07811bdea41750b98">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp36
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:12:32+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/af/0a/50a827d13a75754a8500fa854517f09886027005b09ac5210dca9f0aa101/opencv_contrib_python-4.1.0.25-cp36-cp36m-manylinux1_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp36-cp36m-manylinux1_x86_64.whl
+                    </a>
+                     (32.6 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="91ebfea477d88da016940ce61df2b2eaa5fe9fdfd46fb44a9c0a534f76058040">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp36
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:10:59+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/03/15/30a61c12741f05ceaef6bbf5b8b1c01775081089435564ed3f720bf75d26/opencv_contrib_python-4.1.0.25-cp36-cp36m-win32.whl">
+                      opencv_contrib_python-4.1.0.25-cp36-cp36m-win32.whl
+                    </a>
+                     (30.9 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="dc18e6a3c06b5934c037edaed9f284aee84c398712bfb5290f6a00195e53b1cd">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp36
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T22:17:24+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/49/64/ab513c3e6e06fc0aae00f97c4e617971a3730fc44988499694ce64041bde/opencv_contrib_python-4.1.0.25-cp36-cp36m-win_amd64.whl">
+                      opencv_contrib_python-4.1.0.25-cp36-cp36m-win_amd64.whl
+                    </a>
+                     (43.7 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="8538be27d894b0b3fe645f9690110d3f031f5d581a4a0670bf2fd15139328946">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp36
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T22:41:49+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/73/1f/66452be57fa814bb1a3516b4de6f711a184f57c64e9c8ee5071369ded2ce/opencv_contrib_python-4.1.0.25-cp37-cp37m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp37-cp37m-macosx_10_7_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+                    </a>
+                     (62.0 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="585c1aeed4c1f62e25df64f266cfc9abd508350533424aa0d4893a7218db387f">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp37
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T23:16:20+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/da/50/37f0683802b491654b130c0251a7c09402f73bfbe6cd1639de3f574d0493/opencv_contrib_python-4.1.0.25-cp37-cp37m-manylinux1_i686.whl">
+                      opencv_contrib_python-4.1.0.25-cp37-cp37m-manylinux1_i686.whl
+                    </a>
+                     (33.2 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="43c3e2d78b87f2c5fb9b86848b918fb60956d87e11465813ea4eae9ef4bd94e7">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp37
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:18:29+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/fd/c1/45d9db130d0095db7ea82513246064bb7194c9977670a312c493a2d7bfdc/opencv_contrib_python-4.1.0.25-cp37-cp37m-manylinux1_x86_64.whl">
+                      opencv_contrib_python-4.1.0.25-cp37-cp37m-manylinux1_x86_64.whl
+                    </a>
+                     (32.6 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="a7aaacc3edc99737eb749b2842bc88924b4864d2ef091171dcd36abadd5176d3">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp37
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-11T17:13:45+0000" data-controller="localized-time">
+  Apr 11, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/aa/4c/a3125e25da4b121b4077c575eee8a691ffabb5d97afc5ae832fd5a7015e3/opencv_contrib_python-4.1.0.25-cp37-cp37m-win32.whl">
+                      opencv_contrib_python-4.1.0.25-cp37-cp37m-win32.whl
+                    </a>
+                     (30.9 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="93ca55ae5b2aedab19b75a512ea1ffc3bbfb0a89bb522d27bbca657b15091231">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp37
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-12T08:26:18+0000" data-controller="localized-time">
+  Apr 12, 2019
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/cc/ea/ea342b15c152fb862aeabb02402a0893199a59de821f3347a5fe9bfa2791/opencv_contrib_python-4.1.0.25-cp37-cp37m-win_amd64.whl">
+                      opencv_contrib_python-4.1.0.25-cp37-cp37m-win_amd64.whl
+                    </a>
+                     (43.7 MB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="2b62c6661b67eb50b6bc4138b6f694d17a92a3395059d066e35ff65ffbf41e2e">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      cp37
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2019-04-12T08:50:50+0000" data-controller="localized-time">
+  Apr 12, 2019
+</time></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer__logo">
+        <img src="/static/images/white-cube.8c3a6fe9.svg" alt="Logo" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <ul class="footer__menu">
+          <li>
+            <h2>Help</h2>
+          </li>
+          <li><a href="https://packaging.python.org/installing/">Installing packages</a></li>
+          <li><a href="https://packaging.python.org/tutorials/packaging-projects/">Uploading packages</a></li>
+          <li><a href="https://packaging.python.org/">User guide</a></li>
+          <li><a href="/help/">FAQs</a></li>
+        </ul>
+        <ul class="footer__menu">
+          <li>
+            <h2>About PyPI</h2>
+          </li>
+          <li><a href="https://twitter.com/PyPI">PyPI on Twitter</a></li>
+          <li><a href="https://dtdg.co/pypi">Infrastructure dashboard</a></li>
+          <li><a href="https://www.python.org/dev/peps/pep-0541/">Package index name retention</a></li>
+          <li><a href="/sponsors/">Our sponsors</a></li>
+        </ul>
+
+
+        <ul class="footer__menu">
+          <li>
+            <h2>Contributing to PyPI</h2>
+          </li>
+          <li><a href="/help/#feedback">Bugs and feedback</a></li>
+          <li><a href="https://github.com/pypa/warehouse">Contribute on GitHub</a></li>
+          <li><a href="https://github.com/pypa/warehouse/graphs/contributors">Development credits</a></li>
+        </ul>
+        <ul class="footer__menu">
+          <li>
+            <h2>Using PyPI</h2>
+          </li>
+          <li><a href="https://www.pypa.io/en/latest/code-of-conduct/">Code of conduct</a></li>
+          <li><a href="/security/">Report security issue</a></li>
+          <li><a href="https://www.python.org/privacy/">Privacy policy</a></li>
+          <li><a href="/policy/terms-of-use/">Terms of use</a></li>
+        </ul>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        
+        <p>Status: <a href="https://status.python.org/"><span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a></p>
+        
+        <p>
+          Developed and maintained by the Python community, for the Python community.
+          <br>
+          <a href="https://donate.pypi.org">Donate today!</a>
+        </p>
+        <p>© 2019 <a href="https://www.python.org/psf/">Python Software Foundation</a></p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button class="button button--switch-to-desktop hidden" data-target="viewport-toggle.switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+          Desktop version
+        </button>
+      </div>
+    </footer>
+
+    
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.elastic.co/">
+        <img class="sponsors__image" alt="Elastic" src="/static/images/sponsors/white/elastic.a912fb87.png">
+        <span class="sponsors__name">Elastic</span>
+        <span class="sponsors__service">Search</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+        <img class="sponsors__image" alt="Pingdom" src="/static/images/sponsors/white/pingdom.07446398.png">
+        <span class="sponsors__name">Pingdom</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://cloud.google.com/">
+        <img class="sponsors__image" alt="Google" src="/static/images/sponsors/white/google.2f72f26f.png">
+        <span class="sponsors__name">Google</span>
+        <span class="sponsors__service">BigQuery</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+        <img class="sponsors__image" alt="Sentry" src="/static/images/sponsors/white/sentry.5ab437bc.png">
+        <span class="sponsors__name">Sentry</span>
+        <span class="sponsors__service">Error logging</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+        <img class="sponsors__image" alt="AWS" src="/static/images/sponsors/white/aws.5f800271.png">
+        <span class="sponsors__name">AWS</span>
+        <span class="sponsors__service">Cloud computing</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+        <img class="sponsors__image" alt="DataDog" src="/static/images/sponsors/white/datadog.e569d741.png">
+        <span class="sponsors__name">DataDog</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+        <img class="sponsors__image" alt="Fastly" src="/static/images/sponsors/white/fastly.0563c6f5.png">
+        <span class="sponsors__name">Fastly</span>
+        <span class="sponsors__service">CDN</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.signalfx.com/">
+        <img class="sponsors__image" alt="SignalFx" src="/static/images/sponsors/white/signalfx.560cb5c4.png">
+        <span class="sponsors__name">SignalFx</span>
+        <span class="sponsors__service">Supporter</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.digicert.com/">
+        <img class="sponsors__image" alt="DigiCert" src="/static/images/sponsors/white/digicert.79748718.png">
+        <span class="sponsors__name">DigiCert</span>
+        <span class="sponsors__service">EV certificate</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+        <img class="sponsors__image" alt="StatusPage" src="/static/images/sponsors/white/statuspage.67af0b3d.png">
+        <span class="sponsors__name">StatusPage</span>
+        <span class="sponsors__service">Status page</span>
+      </a>
+    
+  
+</div>
+
+    
+  </body>
+
+</html>
